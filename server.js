@@ -14,7 +14,7 @@ app.use(express.json());
 
 let Books = []
 app.get("/books", (req, res) => {
-    res.send("HomePage Of The App");
+    res.send("HomePage Of The App"); // just sends a message
 });
 
 app.use('/api', bookRoutes); // Use book routes with prefix '/api'
